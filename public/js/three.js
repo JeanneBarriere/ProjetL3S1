@@ -33,6 +33,7 @@ mesh.rotation.x = Math.PI * -.5;
 scene.add(mesh);
 
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.maxPolarAngle = Math.PI/2.1; 
 
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshLambertMaterial({color: 0xEAEFF2});
